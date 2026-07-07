@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina</title>
+</head>
+<body>
+
+    <header>
+        <h1>LUMINA</h1>
+        <div class="miniDisplay">
+            <div class="musicNclock">
+                <div class="currentMusic">
+                    <img class="blackVinyl" src="black vinyl.png">
+                    <p id="currentPlaying">Music Title</p>
+                </div>
+                <p id="miniDate">OCT 12</p>
+                <p id="addBtn">+</p>
+            </div>
+
+            <div class="noteContainer">
+                <!-- <div class="note">
+                    <div class="noteHeader">
+                        <p id="noteTitle">Note</p>
+                    </div>
+                    <div class="noteBody">
+                        <p class="noteText">dlfjalsdjflkajdflasjdflkasjflasfjaslkfjalkfjalfkjalskdfjalkfjdla</p>
+                    </div>
+                    <div class="noteFooter">
+                        <img class="deleteBtn" src="delete Btn.png">
+                    </div>
+                </div> -->
+                
+                <!-- <div class="note">
+                    <div class="noteHeader">
+                        <p id="noteTitle">Note</p>
+                    </div>
+                    <div class="noteBody">
+                        <p class="noteText">Kerjain Tugas</p>
+                    </div>
+                    <div class="noteFooter">
+                        <img class="deleteBtn" src="delete Btn.png">
+                    </div>
+                </div>
+
+                <div class="note">
+                    <div class="noteHeader">
+                        <p id="noteTitle">Note</p>
+                    </div>
+                    <div class="noteBody">
+                        <p class="noteText">Kerjain Tugas</p>
+                    </div>
+                    <div class="noteFooter">
+                        <img class="deleteBtn" src="delete Btn.png">
+                    </div>
+                </div>
+
+                <div class="note">
+                    <div class="noteHeader">
+                        <p id="noteTitle">Note</p>
+                    </div>
+                    <div class="noteBody">
+                        <p class="noteText">Kerjain Tugas</p>
+                    </div>
+                    <div class="noteFooter">
+                        <img class="deleteBtn" src="delete Btn.png">
+                    </div>
+                </div>
+
+                <div class="note">
+                    <div class="noteHeader">
+                        <p id="noteTitle">Note</p>
+                    </div>
+                    <div class="noteBody">
+                        <p class="noteText">Kerjain Tugas</p>
+                    </div>
+                    <div class="noteFooter">
+                        <img class="deleteBtn" src="delete Btn.png">
+                    </div>
+                </div>
+
+                <div class="note">
+                    <div class="noteHeader">
+                        <p id="noteTitle">Note</p>
+                    </div>
+                    <div class="noteBody">
+                        <p class="noteText">Kerjain Tugas</p>
+                    </div>
+                    <div class="noteFooter">
+                        <img class="deleteBtn" src="delete Btn.png">
+                    </div>
+                </div>
+
+                <div class="note">
+                    <div class="noteHeader">
+                        <p id="noteTitle">Note</p>
+                    </div>
+                    <div class="noteBody">
+                        <p class="noteText">Kerjain Tugas</p>
+                    </div>
+                    <div class="noteFooter">
+                        <img class="deleteBtn" src="delete Btn.png">
+                    </div> -->
+                </div>
+
+            </div>
+            
+        </div>   
+
+    </header>
+
+    <main>
+        <div class="backgroundWrapper">
+            <img class="musicVolume" src="music volume logo X.png">
+            <div class="miniWrap">
+                <p class="tooltip">Pomodoro Mode</p>
+                <img disable  class="pomodoroMode" src="Pomodoro.png">
+            </div>
+
+            <div class="middleMain">
+                <p class="mainClock"><span class="hour"></span><span class="colon">:</span><span class="minute"></span><span id="dayOrNight">PM</span></p>
+                <p class="date">Saturday, 10 2077</p>
+            </div>
+
+        </div>
+    </main>
+
+    <aside>
+        <dialog class="addNoteModal">
+            <div class="addNoteModalWrapper">
+                <button id="cancelBtn">X</button>
+                <p class="errorMsg"></p>
+                <div class="noteEdit">
+                    <div class="exampleNote">
+                        <div class="exampleNoteHeader">
+                            <p>NOTE</p>
+                        </div>
+                        <div class="exampleNoteBody">
+                            <p>Your Note Goes Here</p>
+                        </div>
+                    </div>
+
+                    <div class="noteInput">
+                        <label for="noteText">Note:</label>
+                        <input maxlength="112" type="text" id="noteText">
+
+                        <label>Note Color</label>
+                        <div class="colorPicker">
+                            <button class="colorOption selected"
+                            data-color="#1883FF"
+                            style="background:#1883FF;"></button>
+
+                            <button class="colorOption"
+                            data-color="#FDE68A"
+                            style="background:#FDE68A;"></button>
+
+                            <button class="colorOption"
+                            data-color="#FFB4B4"
+                            style="background:#FFB4B4;"></button>
+
+                            <button class="colorOption"
+                            data-color="#A8E6CF"
+                            style="background:#A8E6CF;"></button>
+
+                            <button class="colorOption"
+                            data-color="#D6BCFA"
+                            style="background:#D6BCFA;"></button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                </div>
+                
+                <button id="submitNote">Submit</button>
+
+                </div>
+            </div>
+        </dialog>
+    </aside>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
